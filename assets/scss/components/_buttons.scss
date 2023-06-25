@@ -1,0 +1,16 @@
+@use "../abstracts/" as *;
+
+.btn {
+  display: inline-block;
+  border-radius: 2.5rem;
+  color: #fff;
+  min-width: 140px;
+  padding: 1rem 0;
+  text-align: center;
+  background: #00f260;
+  background: linear-gradient(to left, #2cbac7, #00f260);
+  transition: 0.3s;
+  &:hover{
+    opacity: 0.8;
+  }
+  }

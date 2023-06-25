@@ -1,0 +1,81 @@
+@use "../abstracts/" as *;
+
+.why_easybank {
+    margin-top: 5rem;
+    background-color: #f4f5f7;
+    padding: 5rem 0;
+}
+
+.title {
+    .title {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .text {
+        font-size: 1.6rem;
+        max-width: 45rem;
+        color: $gray-color;
+    }
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2.5rem;
+    margin-top: 5rem;
+
+    .item {
+        .image {
+            margin-bottom: 2.5rem;
+        }
+
+        .title {
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+
+        .text {
+            color: #9d9ea2;
+            font-size: 1.6rem;
+            font-weight: 300;
+            line-height: 2.2rem;
+        }
+    }
+}
+
+//  responsive section 
+@media (max-width:991px) {
+    .why_easybank {
+        .title {
+            text-align: center;
+
+            .text {
+                margin: 0 auto;
+            }
+        }
+
+        .items {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .why_easybank {
+        .title {
+            text-align: center;
+
+            .text {
+                margin: 0 auto;
+            }
+        }
+
+        .items {
+            text-align: center;
+        }
+    }
+}

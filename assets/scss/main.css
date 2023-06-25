@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+  font-family: "Nunito", sans-serif;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7.5rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+  font-size: 1.5rem;
+}
+
+.copy_right {
+  margin-top: 2rem;
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 2.5rem;
+  color: #fff;
+  min-width: 140px;
+  padding: 1rem 0;
+  text-align: center;
+  background: #00f260;
+  background: linear-gradient(to left, #2cbac7, #00f260);
+  transition: 0.3s;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 3rem;
+  margin: 0 auto;
+}
+
+.header {
+  box-shadow: 0px 10px 13px -7px #eae5e5;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background-color: #fff;
+  top: 0;
+}
+.header .icon {
+  display: none;
+}
+.header .nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.header ul li a {
+  font-size: 1.5rem;
+  color: #9d9ea2;
+  transition: 0.3s;
+}
+.header ul li a:hover {
+  color: #33D35E;
+}
+.header .image img {
+  height: 8rem;
+  width: 8rem;
+}
+
+@media (max-width: 991px) {
+  .header ul {
+    display: none;
+  }
+  .header .btn {
+    display: none;
+  }
+  .header .icon {
+    display: block;
+    font-size: 3rem;
+    margin-right: 1rem;
+  }
+}
+.Showcase .svg_hidden {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+}
+.Showcase .container .showcase_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Showcase .container .text_content {
+  flex: 1;
+}
+.Showcase .container .text_content .title {
+  font-size: 3.2rem;
+  color: #2E3046;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+.Showcase .container .text_content .text {
+  color: #9d9ea2;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  max-width: 35rem;
+  margin-bottom: 2.5rem;
+}
+.Showcase .container .image {
+  flex: 1;
+  position: relative;
+  top: -6rem;
+  left: 3rem;
+  width: 50%;
+}
+.Showcase .container .image img {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .Showcase .container .image {
+    position: static;
+  }
+  .Showcase .svg_hidden {
+    display: none;
+  }
+  .Showcase .showcase_content {
+    flex-direction: column;
+    margin-top: 15rem;
+    gap: 3rem;
+  }
+  .Showcase .text_content {
+    order: 1;
+    text-align: center;
+  }
+}
+.why_easybank {
+  margin-top: 5rem;
+  background-color: #f4f5f7;
+  padding: 5rem 0;
+}
+
+.title .title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.title .text {
+  font-size: 1.6rem;
+  max-width: 45rem;
+  color: #9d9ea2;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  justify-content: center;
+  align-items: center;
+  grid-gap: 2.5rem;
+  margin-top: 5rem;
+}
+.items .item .image {
+  margin-bottom: 2.5rem;
+}
+.items .item .title {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+.items .item .text {
+  color: #9d9ea2;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.2rem;
+}
+
+@media (max-width: 991px) {
+  .why_easybank .title {
+    text-align: center;
+  }
+  .why_easybank .title .text {
+    margin: 0 auto;
+  }
+  .why_easybank .items {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .why_easybank .title {
+    text-align: center;
+  }
+  .why_easybank .title .text {
+    margin: 0 auto;
+  }
+  .why_easybank .items {
+    text-align: center;
+  }
+}
+.latest_articles {
+  margin-top: 5rem;
+}
+.latest_articles img {
+  max-width: 100%;
+  width: 100%;
+  min-height: 18.5rem;
+  max-height: 18.5rem;
+}
+.latest_articles .title .title {
+  margin-bottom: 3rem;
+}
+.latest_articles .cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3rem;
+}
+.latest_articles .cards .card {
+  background-color: #fff;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.latest_articles .cards .content {
+  padding: 3rem;
+}
+.latest_articles .cards .content h5 {
+  font-size: 1.2rem;
+  color: #9d9ea2;
+  margin-bottom: 1.2rem;
+}
+.latest_articles .cards .content h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.latest_articles .cards .content p {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+@media (max-width: 768px) {
+  .latest_articles .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .latest_articles .cards {
+    grid-template-columns: 1fr;
+  }
+}
+.footer {
+  background-color: #2D314E;
+  padding: 3rem 0;
+  margin-top: 5rem;
+}
+.footer .footer_content {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer_content .footer_logo img {
+  margin-right: 1rem;
+}
+.footer .footer_content .footer_logo .icons {
+  margin: 0.4rem;
+  transition: 0.3s;
+  margin-top: 2rem;
+}
+.footer .footer_content .footer_logo .icons img:hover {
+  transform: translateY(-0.5rem);
+}
+.footer .footer_content .footer_links {
+  display: flex;
+  align-items: center;
+}
+.footer .footer_content .footer_links a {
+  color: #fff;
+  line-height: 2.5rem;
+}
+.footer .footer_content .footer_links a:hover {
+  color: #33D35E;
+}
+.footer .footer_content .footer_links ul {
+  margin: 0 4rem;
+}
+
+@media (max-width: 576px) {
+  .footer .footer_content {
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .footer .footer_content .footer_links {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  .footer .footer_content .footer_links a {
+    color: #9d9ea2;
+    line-height: 3.5rem;
+  }
+  .footer .footer_content .footer_links a:hover {
+    color: #33D35E;
+  }
+}/*# sourceMappingURL=main.css.map */

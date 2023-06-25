@@ -1,0 +1,45 @@
+@use "../abstracts/" as *;
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+  font-family: "Nunito", sans-serif;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7.5rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+  font-size: 1.5rem;
+}
+
+// img {
+//   width: 100%;
+//   max-width: 100%;
+// }
+.copy_right {
+  margin-top: 2rem;
+  color: #fff;
+}

@@ -1,0 +1,67 @@
+@use "../abstracts/" as *;
+
+.latest_articles {
+    margin-top: 5rem;
+
+    img {
+        max-width: 100%;
+        width: 100%;
+        min-height: 18.5rem;
+        max-height: 18.5rem;
+    }
+
+    .title {
+        .title {
+            margin-bottom: 3rem;
+        }
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 3rem;
+
+        .card {
+            background-color: #fff;
+            background-color: #fff;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        }
+
+        .content {
+            padding: 3rem;
+
+            h5 {
+                font-size: 1.2rem;
+                color: #9d9ea2;
+                margin-bottom: 1.2rem;
+            }
+
+            h3 {
+                font-size: 1.6rem;
+                margin-bottom: 1rem
+            }
+
+            p {
+                font-size: 1.4rem;
+                line-height: 2rem;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .latest_articles {
+        .cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .latest_articles {
+        .cards {
+            grid-template-columns: 1fr;
+        }
+    }
+}

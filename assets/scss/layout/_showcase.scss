@@ -1,0 +1,75 @@
+@use "../abstracts/" as *;
+
+.Showcase {
+    .svg_hidden {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+    }
+
+    .container {
+        .showcase_content {
+            @include flex(center, center);
+        }
+
+        .text_content {
+            flex: 1;
+
+            .title {
+                font-size: 3.2rem;
+                color: #2E3046;
+                font-weight: 400;
+                margin-bottom: 1.5rem;
+            }
+
+            .text {
+                color: $gray-color;
+                font-size: 1.5rem;
+                font-weight: 400;
+                line-height: 2.5rem;
+                max-width: 35rem;
+                margin-bottom: 2.5rem;
+            }
+        }
+
+        .image {
+            flex: 1;
+            position: relative;
+            top: -6rem;
+            left: 3rem;
+            width: 50%;
+
+            img {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:768px) {
+    .Showcase {
+        .container{
+            .image{
+                position: static;
+            }
+        }
+        .svg_hidden {
+            display: none;
+        }
+
+        .showcase_content {
+            flex-direction: column;
+            margin-top: 15rem;
+            gap: 3rem;
+        }
+
+        .text_content {
+            order: 1;
+            text-align: center;
+        }
+    }
+}
